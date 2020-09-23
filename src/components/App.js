@@ -2,6 +2,7 @@ import React from "react";
 import AppControl from "./AppControl";
 import Header from "./Header";
 import Signin from "./Signin";
+import Logout from "./Logout";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 

@@ -42,10 +42,12 @@ const Signin = ({history}) => {  // history is a key router term!
           type='text'
           name='email'
           placeholder='email' />
+        <br/>
         <input
           type='password'
           name='password'
           placeholder='Password' />
+        <br/>
         <button type='submit'>Sign up</button>
       </form>
 
@@ -55,10 +57,12 @@ const Signin = ({history}) => {  // history is a key router term!
           type='text'
           name='signinEmail'
           placeholder='email' />
+        <br/>
         <input
           type='password'
           name='signinPassword'
           placeholder='Password' />
+        <br/>
         <button type='submit'>Sign in</button>
       </form>
 
