@@ -10,6 +10,8 @@
 
 This week we learned how to integrate Firebase into React Redux applications, exploring refactoring actions,reducers, and methods to move CRUD functionality to a Firestore. This is an app for flashcards, where a user can add flashcards, update and delete flashcards, and view flashcards and their definitions.
 
+The site is hosted [here](https://flashcards-firebase-faa8f.firebaseapp.com/). If it does not display when loaded, trying clearing your cache or opening the link in a private browsing window.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 <br><br>
 
