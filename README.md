@@ -17,9 +17,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Component Diagram
 
-![Component Diagram](./public/diagram.png)
+![Component Diagram](./public/diagram.png);
 <br><br>
 
+## Wireframing 
+
+![Flashcard List](./public/Wireframe1.png);
+![Sign Up Page](./public/Wireframe2.png);
+![Log Out page](./public/Wireframe3.png);
 
 ## Known Bugs
 
