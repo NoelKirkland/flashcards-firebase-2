@@ -11,7 +11,7 @@ const FlashcardHeader = styled.h1`
 const HeaderGrid = styled.div`
   display: grid;
   grid-template-columns: 2fr 3fr 1fr 1fr 1fr;
-  grid-template-rows: 20vh;
+  grid-template-rows: 15vh;
   // background-color: blue;
 `;
 

@@ -1,6 +1,6 @@
 import React from "react";
 import firebase from "firebase/app";
-import { Redirect, withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
 const Signin = ({history}) => {  // history is a key router term!
 
@@ -26,13 +26,6 @@ const Signin = ({history}) => {  // history is a key router term!
     });
   }
 
-  function doSignOut() {
-    firebase.auth().signOut().then(function() {
-      console.log("Successfully signed out!");
-    }).catch(function(error) {
-          alert(error.message) 
-    });
-  }
 
   return (
     <React.Fragment>
@@ -65,9 +58,6 @@ const Signin = ({history}) => {  // history is a key router term!
         <br/>
         <button type='submit'>Sign in</button>
       </form>
-
-      <h1>Sign Out</h1>
-      <button onClick={doSignOut}>Sign out</button>
     </React.Fragment>
   );
 }

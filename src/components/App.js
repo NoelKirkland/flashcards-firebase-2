@@ -14,6 +14,9 @@ function App(){
           <Route path='/signin'>
             <Signin />
           </Route>
+          <Route path='/logout'>
+              <Logout />
+          </Route>
           <Route path='/'>
               <AppControl />
           </Route>
