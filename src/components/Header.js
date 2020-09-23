@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
+import firebase from "firebase/app";
 
 const FlashcardHeader = styled.h1`
   font-size: 36px;
@@ -20,6 +21,15 @@ const ParagraphStyles = styled.p`
 `;
 
 function Header(){
+
+  const auth = firebase.auth(); // variable auth is called in the if statement, not the auth method of firebase
+  let currentlyVisibleLink = null;
+  if (auth.currentUser != null) {
+    currentlyVisibleLink = <Link to="/logout"> Log Out</Link>
+  } else {
+    currentlyVisibleLink = <Link to="/signin"> Sign In</Link>
+  }
+
   return (
     <React.Fragment>
       <HeaderGrid>
@@ -31,10 +41,7 @@ function Header(){
             <Link to="/">Home</Link>
         </ParagraphStyles>
         <ParagraphStyles>
-          <Link to="/signin"> Sign In</Link>
-        </ParagraphStyles>
-        <ParagraphStyles>
-          <Link to="/logout"> Log Out</Link>
+          {currentlyVisibleLink}
         </ParagraphStyles>
       </HeaderGrid>
       <hr/>

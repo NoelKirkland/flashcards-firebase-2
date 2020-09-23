@@ -1,6 +1,7 @@
 import React from "react";
 import firebase from "firebase/app";
-import { withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom';
+import Header from './Header';
 
 const Signin = ({history}) => {  // history is a key router term!
 
@@ -29,6 +30,7 @@ const Signin = ({history}) => {  // history is a key router term!
 
   return (
     <React.Fragment>
+      <Header /> 
       <h1>Sign up</h1>
       <form onSubmit={doSignUp}>
         <input

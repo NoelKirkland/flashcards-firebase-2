@@ -14,7 +14,6 @@ function FlashcardList(props){
   if(isLoaded(flashcards)) {
     return (
       <React.Fragment>
-        <hr/>
         {flashcards.map((flashcard) => {
           return <Flashcard
           whenDetailsClicked = {props.onFlashcardSelection}

@@ -5,7 +5,7 @@ import { useFirestore } from 'react-redux-firebase';
 
 function EditFlashcardForm (props) {
 
-  const firestore = useFirestore();
+  const firestore = useFirestore(); //this is importing a method, so the variable calls that method
 
   const { flashcard } = props;
   console.log(flashcard);

@@ -3,6 +3,7 @@ import AddFlashcardForm from './AddFlashcardForm';
 import FlashcardList from './FlashcardList';
 import FlashcardDetails from './FlashcardDetails';
 import EditFlashcardForm from './EditFlashcardForm';
+import Header from './Header';
 import { connect } from 'react-redux';
 import PropTypes from "prop-types";
 import { withFirestore, isLoaded } from 'react-redux-firebase'
@@ -55,7 +56,7 @@ class AppControl extends React.Component {
     }
 
     render(){
-      const auth = this.props.firebase.auth();
+      const auth = this.props.firebase.auth(); 
       if (!isLoaded(auth)) {
         return (
           <React.Fragment>
@@ -66,6 +67,7 @@ class AppControl extends React.Component {
       if ((isLoaded(auth)) && (auth.currentUser == null)) {
         return (
           <React.Fragment>
+            <Header /> 
             <h1>You must be signed in to access the queue.</h1>
           </React.Fragment>
         )
@@ -85,6 +87,7 @@ class AppControl extends React.Component {
         }
         return (
           <React.Fragment>
+            <Header /> 
             {currentlyVisibleState}
           </React.Fragment>
         );

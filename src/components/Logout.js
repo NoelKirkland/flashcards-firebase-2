@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import firebase from "firebase/app";
+import Header from './Header';
 
 function Logout() {
 
   const [loggedIn, setLoggedIn] = useState(true)
-  const auth = firebase.auth();
 
   function doSignOut() {
     firebase.auth().signOut().then(function() {
@@ -18,6 +18,7 @@ function Logout() {
   
     return (
       <React.Fragment>
+        <Header /> 
         <h1>Sign Out</h1>
         {loggedIn ? <button onClick={doSignOut}>Sign out</button> : <h4>You have successfully signed out!</h4>}
       </React.Fragment>
