@@ -15,11 +15,6 @@ The site is hosted [here](https://flashcards-firebase-faa8f.firebaseapp.com/). I
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 <br><br>
 
-## Component Diagram
-
-![Component Diagram](./public/diagram.png);
-<br><br>
-
 ## Wireframing 
 
 ![Flashcard List](./public/Wireframe1.png);
