@@ -19,6 +19,7 @@ function Flashcard(props){
 Flashcard.propTypes = {
   term: PropTypes.string,
   definition: PropTypes.string,
+  userId: PropTypes.string,
   whenDetailsClicked: PropTypes.func
 }
 
